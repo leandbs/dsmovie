@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MovieScore from "../MovieScore";
 
 
@@ -16,7 +17,10 @@ return(
     <div className="dsmovie-card-bottom-container">
         <h3>{movie.title}</h3>
         <MovieScore />
-        <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+<Link to={'/from/${movie.id}'}>
+<div className="btn btn-primary dsmovie-btn">Avaliar</div>
+</Link>
+        
     </div>
 </div>
 
