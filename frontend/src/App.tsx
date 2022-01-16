@@ -11,7 +11,6 @@ import Navbar from "assets/components/Navbar";
         <Route path="/" element={<Listing/>} />
         <Route path="/from">
         <Route path=":movieId" element={<Form/>} />
-        <Route path=":movieId" element={<Listing/>} />
           </Route>
         </Routes>
       </BrowserRouter>
